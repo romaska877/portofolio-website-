@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #222;
+  background-color: #f4f4f4;
+}
+
+.hero {
+  min-height: 80vh;
+  background: linear-gradient(135deg, #111827, #374151);
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 8%;
+}
+
+.logo {
+  margin: 0;
+  font-size: 28px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-content {
+  max-width: 750px;
+  padding: 120px 8%;
+}
+
+.hero-content h1 {
+  font-size: 56px;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.btn,
+.project-card a,
+button {
+  display: inline-block;
+  background-color: #2563eb;
+  color: white;
+  padding: 14px 22px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover,
+.project-card a:hover,
+button:hover {
+  background-color: #1d4ed8;
+}
+
+.section {
+  padding: 70px 8%;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.project-grid {
+  display: flex;
+  gap: 25px;
+}
+
+.project-card {
+  background-color: white;
+  padding: 28px;
+  border-radius: 12px;
+  flex: 1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project-card p {
+  line-height: 1.6;
+}
+
+.skills-section {
+  background-color: white;
+}
+
+.skills {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills span {
+  background-color: #111827;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: bold;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact p {
+  max-width: 700px;
+  margin: 0 auto 25px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+#contactMessage {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #166534;
+}
+
+footer {
+  background-color: #111827;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .hero-content {
+    padding: 80px 8%;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .project-grid {
+    flex-direction: column;
+  }
+}
